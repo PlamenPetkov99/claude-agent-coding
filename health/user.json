@@ -1,0 +1,21 @@
+{
+    "name": "John Doe",
+    "birth_year": 1999,
+    "measurements": [
+        {
+            "measurement_date": "2026-11-16",
+            "weight_kg": 60.0,
+            "height_cm": 170.0,
+            "note": null
+        }
+    ],
+    "nutrition": [
+        {
+            "nutrition_date": "2026-11-16",
+            "calories": 2200,
+            "protein_g": 150.0,
+            "carbs_g": 250.0,
+            "fat_g": 70.0
+        }
+    ]
+}
