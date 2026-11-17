@@ -59,7 +59,7 @@ class JobPosting(BaseModel):
     "'X-Y' -> Y; 'up to X' -> X; 'from X' -> null; "
     "single exact number X -> X; no salary -> null."
 ))
-    required_skills: list[str] = Field(description="List of required skills for the job")
+    required_skills: list[str] = Field(description="Required technologies and skills. Include the main programming language if it appears in the job title (e.g. ‘Python Engineer’ → Python), even if it isn’t listed again.")
     additional_skills: list[str] | None = Field(description="List of additional skills for the job most of the times they mark it with Nice to have")
     seniority: Literal["junior", "mid", "senior"]| None = Field(description="The seniority level of the job")
     currency: str|None = Field(description="The currency of the salary , please use the ISO 4217 code like 'USD', 'EUR' or 'BGN'")
